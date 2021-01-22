@@ -1,0 +1,10 @@
+<div class="container mt-3">
+  <h2><%= author.name %></h2>
+  <div class="d-flex gap-3">
+    <a class="btn btn-success" href="/authors/<%= author.id %>/edit">Edit</a>
+    <%- include('../partials/deleteForm', { url: `/authors/${author.id}` }) %>
+  </div>
+  <% if (booksByAuthor.length > 0) { %>
+  <h2>Books By Author</h2>
+  <%- include('../partials/bookGrid.ejs', {books: booksByAuthor} ) %> <% } %>
+</div>

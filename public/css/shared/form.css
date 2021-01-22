@@ -1,0 +1,34 @@
+.form-row {
+  width: 100%;
+  flex-basis: 0;
+}
+
+/* .form-item {
+  flex-grow: 1;
+} */
+
+.form-item textarea {
+  height: 100%;
+}
+
+.form-item-no-grow {
+  flex-grow: 0 !important;
+}
+
+.filepond--root {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0;
+}
+
+.filepond--panel-root {
+  background-color: lightblue;
+}
+
+.filepond--drop-label {
+  color: #000;
+  font-size: inherit;
+}
+
+textarea {
+  height: 100%;
+}
